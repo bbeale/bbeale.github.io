@@ -176,3 +176,8 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
+#test-automation, #git-treasures, #test-rail-yak, #gansec {
+  border-radius: 0;
+  min-width: 24vh;
+  color:white;
+}
