@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: benjaminbeale.com
-Token: fab1114fa43d21f820fdc3efadb88c4039adabbfc70ffebe1da21cda95da1251
