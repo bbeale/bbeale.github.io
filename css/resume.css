@@ -138,6 +138,7 @@ section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
+  min-height: 100vh;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -176,8 +177,18 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
-#test-automation, #git-treasures, #test-rail-yak, #gansec, #arp-canary, #u-nectix, #py-trade-signal, #alpaca-trade-api-python, #trade-snake {
-  border-radius: 0;
-  min-width: 24vh;
+.project-dropdown {
+  background-color: black;
+}
+
+.project-type {
+  border-radius: 0 20px 0 0;
+  min-width: 60vw;
+  text-align: left;
   color:white;
+  padding-left: 3vw;
+}
+
+.project-list {
+  list-style-type: none;
 }
