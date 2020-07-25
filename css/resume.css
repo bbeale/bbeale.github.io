@@ -182,8 +182,7 @@ a:hover, a:focus, a:active {
 }
 
 .project-type {
-  border-radius: 0 20px 0 0;
-  min-width: 60vw;
+  width: 100%;
   text-align: left;
   color:white;
   padding-left: 3vw;

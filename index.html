@@ -104,113 +104,112 @@
 			<div class="w-100">
 				<h2 class="mb-5">Projects</h2>
 
-				<!-- Quality Engineering -->
-				<div>
-					<p><a class="btn btn-dark mb-3 mb-md-3 ml-md-3 project-type" data-toggle="collapse" href="#qe-projects" role="button" aria-expanded="false">Quality Engineering</a></p>
+				<div class="accordion" id="projectAccordion">
+					<div class="card">
+						<div id="headingOne">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseOne" href="#qe-projects" role="button">Quality Engineering</a>
+						</div>
 
-					<div class="collapse" id="qe-projects">
-						<div class="card card-body project-dropdown">
-							<ul class="project-list">
-								<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank" rel="noopener noreferrer">Test Automation Samples</a> - Examples of past automated tests I've written in PHP and Python with identifying context stripped out.</li>
-								
-								<li><a href="https://github.com/bbeale/GitTreasures" target="_blank" rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams connecting Git/GitLab, Jira, Trello and TestRail.</li>
-								
-								<li><a href="https://github.com/bbeale/TestRailYak" target="_blank" rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for interacting with the TestRail API.</li>
-							</ul>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank" rel="noopener noreferrer">Test Automation Samples</a> - Examples of past automated tests I've written in PHP and Python with identifying context stripped out.</li>
+									
+									<li><a href="https://github.com/bbeale/GitTreasures" target="_blank" rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams connecting Git/GitLab, Jira, Trello and TestRail.</li>
+									
+									<li><a href="https://github.com/bbeale/TestRailYak" target="_blank" rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for interacting with the TestRail API.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<hr class="m-4">
+					<div class="card">
+						<div id="headingTwo">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseTwo" href="#sec-projects" role="button" aria-expanded="false">Security Engineering</a>
+						</div>
 
-				<!-- Security Engineering -->
-				<div>
-					<p><a class="btn btn-dark mb-3 mb-md-3 ml-md-3 project-type" data-toggle="collapse" href="#sec-projects" role="button" aria-expanded="false">Security Engineering</a></p>
-
-					<div class="collapse" id="sec-projects">
-						<div class="card card-body project-dropdown">
-							<ul class="project-list">
-								<li><a href="https://github.com/bbeale/GANSEC" target="_blank" rel="noopener noreferrer">GANSEC</a> - A <span><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">GAN</a></span>-based vulnerability scanner.</li>
-								
-								<li><a href="https://github.com/bbeale/ARPcanary" target="_blank" rel="noopener noreferrer">ARPcanary</a> - A simple ARP spoof detector that I made while playing around with Scapy.</li>
-								
-								<li><a href="https://github.com/BLSEC/toolbox" target="_blank" rel="noopener noreferrer">Box of Fun</a> - A toolbox for miscellaneous fun stuff and things.</li>
-							</ul>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/bbeale/GANSEC" target="_blank" rel="noopener noreferrer">GANSEC</a> - A <span><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">GAN</a></span>-based vulnerability scanner.</li>
+									
+									<li><a href="https://github.com/bbeale/ARPcanary" target="_blank" rel="noopener noreferrer">ARPcanary</a> - A simple ARP spoof detector that I made while playing around with Scapy.</li>
+									
+									<li><a href="https://github.com/BLSEC/toolbox" target="_blank" rel="noopener noreferrer">Box of Fun</a> - A toolbox for miscellaneous fun stuff and things.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<hr class="m-4">
+					<div class="card">
+						<div id="headingThree">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseThree" href="#mitigations" role="button" aria-expanded="false">Vulnerability Mitigations</a>
+						</div>
 
-				<!-- Vulnerabilities -->
-				<div>
-					<p><a class="btn btn-dark mb-3 mb-md-3 ml-md-3 project-type" data-toggle="collapse" href="#mitigations" role="button" aria-expanded="false">Vulnerability Mitigations</a></p>
-					<div class="collapse" id="mitigations">
-						<div class="card card-body project-dropdown">
-							<ul class="project-list">
-								<li><a href="https://github.com/418sec/objutil/pull/1" target="_blank" rel="noopener noreferrer">objutil</a> - Fixed prototype pollution.</li>
-								
-								<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
-							</ul>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/418sec/objutil/pull/1" target="_blank" rel="noopener noreferrer">objutil</a> - Fixed prototype pollution.</li>
+									
+									<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<hr class="m-4">
+					<div class="card">
+						<div id="headingFour">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseFour" href="#data-projects" role="button" aria-expanded="false">Trading Projects</a>
+						</div>
 
-				<!-- Trading Projects -->
-				<div>
-					<p><a class="btn btn-dark mb-3 mb-md-3 ml-md-3 project-type" data-toggle="collapse" href="#data-projects" role="button" aria-expanded="false">Trading Projects</a></p>
-
-					<div class="collapse" id="data-projects">
-						<div class="card card-body project-dropdown">
-							<ul class="project-list">
-								<li><a href="https://github.com/bbeale/u-nectix" target="_blank" rel="noopener noreferrer">u-nectix</a> - Algorithmic trading bot for stocks, forex, and cryptocurrencies. Written in Python.</li>
-
-								<li><a href="https://github.com/bbeale/py-trade-signal" target="_blank" rel="noopener noreferrer">py-trade-signal</a> - A library for algorithmic or mechanical discretionary traders to determine buy/sell signals based on multiple technical indicators.</li>
-
-								<li><a href="https://github.com/bbeale/tradeSnake" target="_blank" rel="noopener noreferrer">tradeSnake</a> - A much earlier algorithmic trading bot for cryptocurrencies that used an exchange no longer operating in the US. Also written in Python.</li>
-							</ul>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/bbeale/u-nectix" target="_blank" rel="noopener noreferrer">u-nectix</a> - Algorithmic trading bot for stocks, forex, and cryptocurrencies. Written in Python.</li>
+	
+									<li><a href="https://github.com/bbeale/py-trade-signal" target="_blank" rel="noopener noreferrer">py-trade-signal</a> - A library for algorithmic or mechanical discretionary traders to determine buy/sell signals based on multiple technical indicators.</li>
+	
+									<li><a href="https://github.com/bbeale/tradeSnake" target="_blank" rel="noopener noreferrer">tradeSnake</a> - A much earlier algorithmic trading bot for cryptocurrencies that used an exchange no longer operating in the US. Also written in Python.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<hr class="m-4">
+					<div class="card">
+						<div id="headingFive">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseFive" href="#other-projects" role="button" aria-expanded="false">Other Projects</a>
+						</div>
 
-				<!-- Other Projects -->
-				<div>
-					<p><a class="btn btn-dark mb-3 mb-md-3 ml-md-3 project-type" data-toggle="collapse" href="#other-projects" role="button" aria-expanded="false">Other Projects</a></p>
-
-					<div class="collapse" id="other-projects">
-						<div class="card card-body project-dropdown">
-							<ul class="project-list">
-								<li><a href="https://github.com/bbeale/turbid" target="_blank" rel="noopener noreferrer">turbid</a> - An auction site bidding bot that algorithmically looks for arbitrage opportunities.</li>
-
-								<li><a href="https://github.com/bbeale/Battleship" target="_blank" rel="noopener noreferrer">Battleship</a> - A Battleship-type game from a game development class.</li>
-
-								<li><a href="https://github.com/bbeale/dataops" target="_blank" rel="noopener noreferrer">dataops</a> - A small library for working with text from retail product taxonomies. Originally written using Levenshtein based string matching algorithms, renewed interest in this project by way of another project is prompting heavy upgrades. The current version under development makes use of natural language processing techniques.</li>
-							</ul>
+						<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/bbeale/turbid" target="_blank" rel="noopener noreferrer">turbid</a> - An auction site bidding bot that algorithmically looks for arbitrage opportunities.</li>
+	
+									<li><a href="https://github.com/bbeale/Battleship" target="_blank" rel="noopener noreferrer">Battleship</a> - A Battleship-type game from a game development class.</li>
+	
+									<li><a href="https://github.com/bbeale/dataops" target="_blank" rel="noopener noreferrer">dataops</a> - A small library for working with text from retail product taxonomies. Originally written using Levenshtein based string matching algorithms, renewed interest in this project by way of another project is prompting heavy upgrades. The current version under development makes use of natural language processing techniques.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<hr class="m-4">
+					<div class="card">
+						<div id="headingSix">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseSix" href="#open-source" role="button" aria-expanded="false">Recent Open Source Contributions</a>
+						</div>
 
-				<!-- Open Source -->
-				<div>
-					<p><a class="btn btn-dark mb-3 mb-md-3 ml-md-3 project-type" data-toggle="collapse" href="#open-source" role="button" aria-expanded="false">Recent Open Source Contributions</a></p>
-
-					<div class="collapse" id="open-source">
-						<div class="card card-body project-dropdown">
-							<ul class="project-list">
-								<li><a href="https://github.com/codingo/NoSQLMap/pull/99" target="_blank" rel="noopener noreferrer">NoSQLMap</a> - Automated NoSQL database enumeration and web application exploitation tool.</li>
-
-								<li><a href="https://github.com/alpacahq/alpaca-trade-api-python/pull/134" target="_blank" rel="noopener noreferrer">alpaca-trade-api-python</a> - Python client for Alpaca's trade API.</li>
-
-								<li><a href="https://github.com/alpacahq/alpaca-trade-api-js/pull/56" target="_blank" rel="noopener noreferrer">alpaca-trade-api-js</a> - NodeJS client for Alpaca's trade API.</li>
-
-								<li><a href="https://github.com/codingo/Reconnoitre/pull/123" target="_blank" rel="noopener noreferrer">Reconnoitre</a> - A security tool for multithreaded information gathering and service enumeration whilst building directory structures to store results, along with writing out recommendations for further testing.</li>
-							</ul>
+						<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/codingo/NoSQLMap/pull/99" target="_blank" rel="noopener noreferrer">NoSQLMap</a> - Automated NoSQL database enumeration and web application exploitation tool.</li>
+	
+									<li><a href="https://github.com/alpacahq/alpaca-trade-api-python/pull/134" target="_blank" rel="noopener noreferrer">alpaca-trade-api-python</a> - Python client for Alpaca's trade API.</li>
+	
+									<li><a href="https://github.com/alpacahq/alpaca-trade-api-js/pull/56" target="_blank" rel="noopener noreferrer">alpaca-trade-api-js</a> - NodeJS client for Alpaca's trade API.</li>
+	
+									<li><a href="https://github.com/codingo/Reconnoitre/pull/123" target="_blank" rel="noopener noreferrer">Reconnoitre</a> - A security tool for multithreaded information gathering and service enumeration whilst building directory structures to store results, along with writing out recommendations for further testing.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
