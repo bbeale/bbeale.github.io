@@ -196,7 +196,7 @@ a:hover, a:focus, a:active {
   border-right-style: hidden;
 }
 
-#vulnMitigations {
+.sec-header {
   padding-left: 2vw;
 }
 
