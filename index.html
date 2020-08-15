@@ -26,6 +26,7 @@
 </head>
 
 <body id="page-top">
+	<script>document.body.className += ' fade-out';</script>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -130,9 +131,12 @@
 
 						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
-								<p class="sec-header">Vulnerability Mitigations</p>
+								<p class="sec-header">Vulnerabilities</p>
 								<ul class="project-list">
-									<li><a href="" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>
+									<li><a href="https://github.com/418sec/urlregex/pull/1" target="_blank" rel="noopener noreferrer">urlregex</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
+
+									<li><a href="https://github.com/418sec/safer-eval/pull/1" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>
+									
 									<li><a href="https://github.com/418sec/fun-map/pull/3" target="_blank" rel="noopener noreferrer">fun-map</a> - Fixed prototype pollution.</li>
 
 									<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
@@ -224,6 +228,12 @@
 
 	<!-- Custom scripts for this template -->
 	<script src="js/resume.js"></script>
+	<script>
+	window.onload = function()
+    {
+        document.getElementById("element").className  .addEventListener( 'click' , alterClass );
+    }
+	</script>
 
 </body>
 </html>
