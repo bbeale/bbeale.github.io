@@ -207,3 +207,8 @@ a:hover, a:focus, a:active {
 .comingSoon {
   color: white;
 }
+.huntr-icon {
+  height: 4em;
+  width: 4em; 
+
+}
