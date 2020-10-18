@@ -45,26 +45,37 @@
 	</nav>
 
 	<div class="container-fluid p-0">
-
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 			<div class="w-100">
 				<h1 class="mb-0"><span class="first-name">Ben</span>jamin Beale</h1>
 				<div class="subheading mb-5">Quality Engineer / Security Engineer / Dev</div>
+				<p class="lead mb-5 mb-md-5">I am a software engineer with a background in quality engineering,
+					application security, test tooling, and automation.</p>
 
-				<div class="media">
-					<img src="img/huntr-logo.png" class="align-self-center mr-3 img-fluid huntr-icon" alt="huntr-logo">
-					<div class="media-body">
-						<p class="lead mt-3 ">Listen to my recent appearance on the weekly huntr.dev <a href="https://www.huntr.dev/blog/podcast-just-do-it" target="_blank" rel="noopener noreferrer">appsec podcast</a>!</p>
+				<!-- Modal -->
+				<div class="modal fade" id="huntrModal" tabindex="-1" role="dialog" aria-labelledby="huntrModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="huntrModalLabel">Become a huntr!</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+
+							<div class="modal-body">
+								<a class="btn btn-outline-light huntr-btn" href="https://www.huntr.dev/bounties/disclose/" target="_blank" rel="noopener noreferrer">Disclose</a>
+								<hr class="m-3">
+								<a class="btn btn-outline-light huntr-btn" href="https://www.huntr.dev/bounties/" target="_blank" rel="noopener noreferrer">Fix</a>
+							</div>
+							<div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div>
+						</div>
 					</div>
 				</div>
 
-				<hr class="m-3">
-
-				<p class="lead mb-5 mb-md-5">I am a software engineer with a background in quality engineering, application security, test tooling, and automation.</p> 
-				
 				<hr class="m-0">
 
-				<p class="lead mb-5 mb-md-5">I also have too many hobbies.</p>          
+				<p class="lead mb-5 mb-md-5">Currently in the top 10 on <span><a
+						href="https://huntr.dev" target="_blank" rel="noopener noreferrer">huntr.dev</a></span>, I
+					also have too many hobbies.</p>
 				<hr class="m-0">
 			</div>
 		</section>
@@ -85,10 +96,10 @@
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sec">
 			<div class="w-100">
 				<h2 class="mb-5">Security Engineering</h2>
-				<p class="lead mb-4">I am highly motivated by studying the ways in which software behavior can differ from what the end user might expect. </p>	
+				<p class="lead mb-4">I am highly motivated by studying the ways in which software behavior can differ from what the end user might expect. </p>
 
 				<p class="lead mb-4">While that may be encapsulated by my QE work, testing webapps for security vulnerabilities kicks it up several notches when compared to looking for functional defects due to the methodologies a security tester must use. While functional testing often simulates the role of an end user to interact accordingly with the system under test, security testing involves abusing functionality to make it behave in unexpected and unsafe ways. Because of this, security tests typically do not limit the scope in the same way as functional tests, with some projects even allowing the use of special tools such as automated scanners to speed up the process. </p>
-					
+
 				<p class="lead mb-4">Among my vulnerability findings include stored XSS, SQL injections, and a particularly interesting multipart session vulnerability in a learning management system. However, along with discovering security flaws, I am also comfortable taking off the white hat and putting on the developer hat to mitigate vulnerabilities disclosed by others. Some of my recent fixes include NPM modules used in many projects. </p>
 			</div>
 		</section>
@@ -123,9 +134,9 @@
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
 									<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank" rel="noopener noreferrer">Test Automation Samples</a> - Examples of past automated tests I've written in PHP and Python with identifying context stripped out.</li>
-									
+
 									<li><a href="https://github.com/bbeale/GitTreasures" target="_blank" rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams connecting Git/GitLab, Jira, Trello and TestRail.</li>
-									
+
 									<li><a href="https://github.com/bbeale/TestRailYak" target="_blank" rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for interacting with the TestRail API.</li>
 								</ul>
 							</div>
@@ -139,7 +150,16 @@
 
 						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
-								<p class="sec-header">Vulnerabilities</p>
+								<p class="sec-header">Disclosures</p>
+								<ul class="project-list">
+									<li><a href="https://github.com/418sec/huntr/pull/741" target="_blank" rel="noopener noreferrer">spree</a> - Username enumeration.</li>
+
+									<li><a href="https://github.com/418sec/huntr/pull/411" target="_blank" rel="noopener noreferrer">useragent</a> - Catastrophic backtracking leading to ReDoS.</li>
+
+								</ul>
+
+
+								<p class="sec-header">Fixes</p>
 								<ul class="project-list">
 									<li><a href="https://github.com/418sec/mongo-parse/pull/1" target="_blank" rel="noopener noreferrer">mongo-parse</a> - Fixed arbitrary code injection.</li>
 
@@ -148,7 +168,7 @@
 									<li><a href="https://github.com/418sec/urlregex/pull/1" target="_blank" rel="noopener noreferrer">urlregex</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
 
 									<li><a href="https://github.com/418sec/safer-eval/pull/1" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>
-									
+
 									<li><a href="https://github.com/418sec/fun-map/pull/3" target="_blank" rel="noopener noreferrer">fun-map</a> - Fixed prototype pollution.</li>
 
 									<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
@@ -159,9 +179,9 @@
 								<p class="sec-header">Projects</p>
 								<ul class="project-list">
 									<li><a href="https://github.com/bbeale/GANSEC" target="_blank" rel="noopener noreferrer">GANSEC</a> - A <span><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">GAN</a></span>-based vulnerability scanner.</li>
-									
+
 									<li><a href="https://github.com/bbeale/ARPcanary" target="_blank" rel="noopener noreferrer">ARPcanary</a> - A simple ARP spoof detector that I made while playing around with Scapy.</li>
-									
+
 									<li><a href="https://github.com/BLSEC/toolbox" target="_blank" rel="noopener noreferrer">Malware Research</a> - A sample of miscellaneous malware written for academic/research purposes.</li>
 								</ul>
 							</div>
@@ -177,9 +197,9 @@
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
 									<li><a href="https://github.com/bbeale/u-nectix" target="_blank" rel="noopener noreferrer">u-nectix</a> - Algorithmic trading bot for stocks, forex, and cryptocurrencies. Written in Python.</li>
-	
+
 									<li><a href="https://github.com/bbeale/py-trade-signal" target="_blank" rel="noopener noreferrer">py-trade-signal</a> - A library for algorithmic or mechanical discretionary traders to determine buy/sell signals based on multiple technical indicators.</li>
-	
+
 									<li><a href="https://github.com/bbeale/tradeSnake" target="_blank" rel="noopener noreferrer">tradeSnake</a> - A much earlier algorithmic trading bot for cryptocurrencies that used an exchange no longer operating in the US. Also written in Python.</li>
 								</ul>
 							</div>
@@ -213,11 +233,11 @@
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
 									<li><a href="https://github.com/codingo/NoSQLMap/pull/99" target="_blank" rel="noopener noreferrer">NoSQLMap</a> - Automated NoSQL database enumeration and web application exploitation tool.</li>
-	
+
 									<li><a href="https://github.com/alpacahq/alpaca-trade-api-python/pull/134" target="_blank" rel="noopener noreferrer">alpaca-trade-api-python</a> - Python client for Alpaca's trade API.</li>
-	
+
 									<li><a href="https://github.com/alpacahq/alpaca-trade-api-js/pull/56" target="_blank" rel="noopener noreferrer">alpaca-trade-api-js</a> - NodeJS client for Alpaca's trade API.</li>
-	
+
 									<li><a href="https://github.com/codingo/Reconnoitre/pull/123" target="_blank" rel="noopener noreferrer">Reconnoitre</a> - A security tool for multithreaded information gathering and service enumeration whilst building directory structures to store results, along with writing out recommendations for further testing.</li>
 								</ul>
 							</div>
