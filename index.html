@@ -36,8 +36,9 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qe">Quality</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sec">Security</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blc">Blockchain</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qe">Quality</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
 			</ul>
@@ -48,46 +49,12 @@
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 			<div class="w-100">
 				<h1 class="mb-0"><span class="first-name">Ben</span>jamin Beale</h1>
-				<div class="subheading mb-5">Quality Engineer / Security Engineer / Dev</div>
-				<p class="lead mb-5 mb-md-5">I am a software engineer with a background in quality engineering,
-					application security, test tooling, and automation.</p>
-
-				<!-- Modal -->
-				<div class="modal fade" id="huntrModal" tabindex="-1" role="dialog" aria-labelledby="huntrModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="huntrModalLabel">Become a huntr!</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							</div>
-
-							<div class="modal-body">
-								<a class="btn btn-outline-light huntr-btn" href="https://www.huntr.dev/bounties/disclose/" target="_blank" rel="noopener noreferrer">Disclose</a>
-								<hr class="m-3">
-								<a class="btn btn-outline-light huntr-btn" href="https://www.huntr.dev/bounties/" target="_blank" rel="noopener noreferrer">Fix</a>
-							</div>
-							<div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div>
-						</div>
-					</div>
-				</div>
-
+				<div class="subheading mb-5">quality / security engineer — smart contract auditor — dev</div>
+				<p class="lead mb-5 mb-md-5">
+					I am a software engineer with a background in quality engineering,
+					application security, test tooling, and automation. I also conduct security audits on traditional web apps and blockchain-based smart contract applications.
+				</p>
 				<hr class="m-0">
-
-				<p class="lead mb-5 mb-md-5">Currently in the top 10 on <span><a
-						href="https://huntr.dev" target="_blank" rel="noopener noreferrer">huntr.dev</a></span>, I
-					also have too many hobbies.</p>
-				<hr class="m-0">
-			</div>
-		</section>
-
-		<hr class="m-0">
-
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
-			<div class="w-100">
-				<h2 class="mb-5">Quality Engineering</h2>
-				<p class="lead mb-4">I have a range of quality engineering experience which includes functional testing, security testing, test planning,  automated test development, along with the integration of workflow and test tooling for the team -- some of which from third party vendors, with another being a project of my own.</p>
-
-				<p class="lead mb-4">I am knowledgable of current QE processes. I am equally, if not more comfortable with opening up a code editor alongside of a test session to obtain insight that can only be gained by looking <a href="https://en.wikipedia.org/wiki/White-box_testing" target="_blank" rel="noopener noreferrer">under the hood</a>.</p>
 			</div>
 		</section>
 
@@ -106,28 +73,45 @@
 
 				<hr class="mb-1">
 
-				<p class="lead mb-4">I am highly motivated by studying the ways in which software behavior can differ
-					from what the end user might expect. </p>
+				<p class="lead mb-4">
+					I am highly motivated by studying the ways in which software behavior can differ
+					from what the end user might expect. 
+				</p>
 
-				<p class="lead mb-4">Such a specific aspect may be encapsulated by my QE work, but testing webapps for
-					security vulnerabilities kicks it up several notches when compared to looking for functional
-					defects due to the methodologies a security tester must use. While functional testing simulates the
-					role of an end user to interact accordingly with the system under test, security testing involves
-					abusing functionality to make it behave in unexpected and unsafe ways. Because of this, security
-					tests typically do not limit the scope in the same way as functional tests, with some projects even
-					allowing the use of special tools such as automated scanners to speed up the process. </p>
+				<p class="lead mb-4">
+					Many vulnerabilities can be uncovered using static and dynamic analysis techniques on either the underlying source code or binaries. My time reviewing bug bounty vulnerability submissions showed me that these vulnerabilities do not always present themselves in places that can be directly affected by users. Nevertheless, their potential to chain with other vulnerabilities necessitates their mitigation as well.
+				</p> 
 
-				<p class="lead mb-4">Below the user interface, there are many more vulnerabilities that can be
-					uncovered using static and dynamic analysis techniques on the underlying source code. These
-					vulnerabilities	do not always present themselves in places that can be directly affected by users,
-					but the ability to chain these to other vulnerabilities necessitates their mitigation as well. In
-					traditional web applications, and even more so in decentralized, blockchain based smart contract
-					applicatinos, secure code review is often the only measure to ensure the chance of pushing
-					vulnerable code to production is minimized. </p>
-
-				<p class="lead mb-4">Among my vulnerability findings include reflected and stored XSS, SQL injections,
+				<p class="lead mb-4">
+					Among my vulnerability findings include reflected and stored XSS, SQL injections,
 					and a particularly interesting multipart session vulnerability in a learning management system.
 					To see more about my disclosures and mitigations, scroll down to the Projects section.
+				</p>
+			</div>
+		</section>
+
+		<hr class="m-0">
+
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blc">
+			<div class="w-100">
+				<h2 class="mb-5">Blockchain Security</h2>
+				<p class="lead mb-4">
+					In	traditional web applications, at least for some vulnerability classes, secure code review is often the only measure to ensure the chance of pushing unsafe code to production is minimized. This is even more so the case with smart contract based applications. Because blockchains are designed to be immutable, fixing a vulnerability by simply pushing an update is not possible. Therefore, all smart contracts should undergo multiple audits before being deployed to their respective mainnet.
+				</p>
+			</div>
+		</section>
+
+		<hr class="m-0">
+
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
+			<div class="w-100">
+				<h2 class="mb-5">Quality Engineering</h2>
+				<p class="lead mb-4">
+					I have a range of quality engineering experience which includes functional testing, security testing, test planning,  automated test development, along with the integration of workflow and test tooling for the team -- some of which from third party vendors, with another being a project of my own.
+				</p>
+
+				<p class="lead mb-4">
+					I am knowledgable of current QE processes. I am equally, if not more comfortable with opening up a code editor alongside of a test session to obtain insight that can only be gained by looking <a href="https://en.wikipedia.org/wiki/White-box_testing" target="_blank" rel="noopener noreferrer">under the hood</a>.
 				</p>
 			</div>
 		</section>
