@@ -75,12 +75,12 @@
 
 				<p class="lead mb-4">
 					I am highly motivated by studying the ways in which software behavior can differ
-					from what the end user might expect. 
+					from what the end user might expect.
 				</p>
 
 				<p class="lead mb-4">
 					Many vulnerabilities can be uncovered using static and dynamic analysis techniques on either the underlying source code or binaries. My time reviewing bug bounty vulnerability submissions showed me that these vulnerabilities do not always present themselves in places that can be directly affected by users. Nevertheless, their potential to chain with other vulnerabilities necessitates their mitigation as well.
-				</p> 
+				</p>
 
 				<p class="lead mb-4">
 					Among my vulnerability findings include reflected and stored XSS, SQL injections,
@@ -138,30 +138,13 @@
 
 				<div class="accordion" id="projectAccordion">
 					<div class="card">
-						<div id="headingOne">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseOne"
-							   href="#qe-projects" role="button" aria-expanded="false">Quality Engineering</a>
+						<div id="headingSec">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseSec"
+							   href="#sec-projects" role="button" aria-expanded="false">Application Security</a>
 						</div>
 
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#projectAccordion">
-							<div class="card card-body project-dropdown">
-								<ul class="project-list">
-									<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank" rel="noopener noreferrer">Test Automation Samples</a> - Examples of past automated tests I've written in PHP and Python with identifying context stripped out.</li>
-
-									<li><a href="https://github.com/bbeale/GitTreasures" target="_blank" rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams connecting Git/GitLab, Jira, Trello and TestRail.</li>
-
-									<li><a href="https://github.com/bbeale/TestRailYak" target="_blank" rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for interacting with the TestRail API.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="card">
-						<div id="headingTwo">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseTwo" href="#sec-projects" role="button" aria-expanded="false">Security Engineering</a>
-						</div>
-
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#projectAccordion">
+						<div id="collapseSec"
+							 class="collapse" aria-labelledby="headingSec" data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
 								<p class="sec-header">Disclosures</p>
 								<ul class="project-list">
@@ -202,11 +185,50 @@
 					</div>
 
 					<div class="card">
-						<div id="headingFour">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseFour" href="#data-projects" role="button" aria-expanded="false">Trading Projects</a>
+						<div id="headingBloc">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseBloc"
+							   href="#bloc-projects" role="button" aria-expanded="false">Blockchain Security</a>
 						</div>
 
-						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#projectAccordion">
+						<div id="collapseBloc"
+							 class="collapse" aria-labelledby="headingBloc" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<p class="sec-header">Smart Contract Audits</p>
+								<ul class="project-list">
+									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Mobie%20%5B24-09-2020%5D%20(1).pdf" target="_blank" rel="noopener noreferrer">Mobie</a> - Universal payments and rewards ecosystem.</li>
+									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Dubois%20Gold%20%5B04.11.2020%5D.pdf" target="_blank" rel="noopener noreferrer">DuBois Gold</a> - DuBois Gold Market Solidity contracts.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div id="headingQE">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseQE"
+							   href="#qe-projects" role="button" aria-expanded="false">Quality Engineering</a>
+						</div>
+
+						<div id="collapseQE" class="collapse" aria-labelledby="headingQE" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<ul class="project-list">
+									<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank" rel="noopener noreferrer">Test Automation Samples</a> - Examples of past automated tests I've written in PHP and Python with identifying context stripped out.</li>
+
+									<li><a href="https://github.com/bbeale/GitTreasures" target="_blank" rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams connecting Git/GitLab, Jira, Trello and TestRail.</li>
+
+									<li><a href="https://github.com/bbeale/TestRailYak" target="_blank" rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for interacting with the TestRail API.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div id="headingTrd">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseTrd"
+							   href="#trading-projects" role="button" aria-expanded="false">Trading Projects</a>
+						</div>
+
+						<div id="collapseTrd" class="collapse" aria-labelledby="headingTrd"
+							 data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
 									<li><a href="https://github.com/bbeale/u-nectix" target="_blank" rel="noopener noreferrer">u-nectix</a> - Algorithmic trading bot for stocks, forex, and cryptocurrencies. Written in Python.</li>
@@ -220,11 +242,12 @@
 					</div>
 
 					<div class="card">
-						<div id="headingFive">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseFive" href="#other-projects" role="button" aria-expanded="false">Other Projects</a>
+						<div id="headingOther">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseOther"
+							   href="#other-projects" role="button" aria-expanded="false">Other Projects</a>
 						</div>
 
-						<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#projectAccordion">
+						<div id="collapseOther" class="collapse" aria-labelledby="headingOther" data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
 									<li><a href="https://github.com/bbeale/Battleship" target="_blank" rel="noopener noreferrer">Battleship</a> - A Battleship-type game from a game development class.</li>
@@ -239,7 +262,9 @@
 
 					<div class="card">
 						<div id="headingSix">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseSix" href="#open-source" role="button" aria-expanded="false">Recent Open Source Contributions</a>
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseSix"
+							   href="#open-source" role="button" aria-expanded="false">Open Source
+								Randomness</a>
 						</div>
 
 						<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#projectAccordion">
