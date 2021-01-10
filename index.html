@@ -36,8 +36,8 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sec">Security</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blc">Blockchain</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sec">Appsec</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qe">Quality</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
@@ -46,13 +46,16 @@
 	</nav>
 
 	<div class="container-fluid p-0">
+
+		<!--About-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 			<div class="w-100">
 				<h1 class="mb-0"><span class="first-name">Ben</span>jamin Beale</h1>
-				<div class="subheading mb-5">quality / security engineer — smart contract auditor — dev</div>
+				<div class="subheading mb-5">quality | appsec | development | blockchain</div>
 				<p class="lead mb-5 mb-md-5">
-					I am a software engineer with a background in quality engineering,
-					application security, test tooling, and automation. I also conduct security audits on traditional web apps and blockchain-based smart contract applications.
+					I am a full-stack software engineer with experience in blockchain security and development, quality
+					engineering, application security, test tooling, and automation. I conduct security audits on
+					traditional web apps and blockchain-based smart contract applications.
 				</p>
 				<hr class="m-0">
 			</div>
@@ -60,12 +63,37 @@
 
 		<hr class="m-0">
 
+		<!--Blockchain-->
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blc">
+			<div class="w-100">
+				<h2 class="mb-5">Blockchain Development</h2>
+				<p class="lead mb-4">In	traditional web applications, secure code review is an important measure to
+					ensure the chance of pushing unsafe code to production is minimized. This is even more so the
+					case with smart contract based applications. Because blockchain implementations are designed to
+					be immutable, fixing a vulnerability by simply pushing an update is not possible. Therefore, it
+					is crucial that all smart contracts undergo multiple audits before being deployed to their
+					respective mainnet.
+				</p>
+
+				<p class="lead mb-4">As a blockchain developer, I write smart contracts that follow security best
+					practices. As an auditor, my development experience allows me to grok new codebases quickly.
+					Combining these skills gives me an edge over auditors from other tech backgrounds and developers
+					from non security backgrounds.
+				</p>
+			</div>
+		</section>
+
+		<hr class="m-0">
+
+		<!--Security-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sec">
 			<div class="w-100">
-				<h2 class="mb-5">Security Engineering</h2>
+				<h2 class="mb-5">Application Security</h2>
 
 				<div class="media">
-					<img src="img/huntr-logo.png" class="align-self-center mr-3 img-fluid huntr-icon" alt="huntr-logo">
+					<a href="https://huntr.dev/users/bbeale/" target="_blank" rel="noopener noreferrer">
+						<img src="img/huntr-logo.png" class="align-self-center mr-3 img-fluid huntr-icon" alt="huntr-logo">
+					</a>
 					<div class="media-body">
 						<p class="lead mt-3 ">Listen to me on the huntr.dev <a href="https://www.huntr.dev/blog/podcast-just-do-it" target="_blank" rel="noopener noreferrer">appsec podcast</a>!</p>
 					</div>
@@ -92,17 +120,7 @@
 
 		<hr class="m-0">
 
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blc">
-			<div class="w-100">
-				<h2 class="mb-5">Blockchain Security</h2>
-				<p class="lead mb-4">
-					In	traditional web applications, at least for some vulnerability classes, secure code review is often the only measure to ensure the chance of pushing unsafe code to production is minimized. This is even more so the case with smart contract based applications. Because blockchains are designed to be immutable, fixing a vulnerability by simply pushing an update is not possible. Therefore, all smart contracts should undergo multiple audits before being deployed to their respective mainnet.
-				</p>
-			</div>
-		</section>
-
-		<hr class="m-0">
-
+		<!--Quality-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
 			<div class="w-100">
 				<h2 class="mb-5">Quality Engineering</h2>
@@ -118,6 +136,7 @@
 
 		<hr class="m-0">
 
+		<!--Contact-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
 			<div class="w-100">
 				<h2 class="mb-5">Get a hold of me</h2>
@@ -126,23 +145,42 @@
 					<a href="https://www.linkedin.com/in/beale1bj" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
 					<a href="https://github.com/bbeale" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
 					<a href="mailto:beale.ben@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-					<a href="https://www.huntr.dev/users/bbeale" target="_blank" rel="noopener noreferrer"><i
-							class="fas fa-custom-huntr"></i></a>
 				</div>
 			</div>
 		</section>
 
 		<hr class="m-0">
 
+		<!--Projects-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
 			<div class="w-100">
 				<h2 class="mb-5">Projects</h2>
 
 				<div class="accordion" id="projectAccordion">
+					<!--bloc-->
+					<div class="card">
+						<div id="headingBloc">
+							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseBloc"
+							   href="#bloc-projects" role="button" aria-expanded="false">Blockchain</a>
+						</div>
+
+						<div id="collapseBloc"
+							 class="collapse" aria-labelledby="headingBloc" data-parent="#projectAccordion">
+							<div class="card card-body project-dropdown">
+								<p class="sec-header">Smart Contract Audits</p>
+								<ul class="project-list">
+									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Mobie%20%5B24-09-2020%5D%20(1).pdf" target="_blank" rel="noopener noreferrer">Mobie</a> - Universal payments and rewards ecosystem.</li>
+									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Dubois%20Gold%20%5B04.11.2020%5D.pdf" target="_blank" rel="noopener noreferrer">DuBois Gold</a> - DuBois Gold Market Solidity contracts.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!--sec-->
 					<div class="card">
 						<div id="headingSec">
 							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseSec"
-							   href="#sec-projects" role="button" aria-expanded="false">Application Security</a>
+							   href="#sec-projects" role="button" aria-expanded="false">Appsec</a>
 						</div>
 
 						<div id="collapseSec"
@@ -186,28 +224,11 @@
 						</div>
 					</div>
 
-					<div class="card">
-						<div id="headingBloc">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseBloc"
-							   href="#bloc-projects" role="button" aria-expanded="false">Blockchain Security</a>
-						</div>
-
-						<div id="collapseBloc"
-							 class="collapse" aria-labelledby="headingBloc" data-parent="#projectAccordion">
-							<div class="card card-body project-dropdown">
-								<p class="sec-header">Smart Contract Audits</p>
-								<ul class="project-list">
-									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Mobie%20%5B24-09-2020%5D%20(1).pdf" target="_blank" rel="noopener noreferrer">Mobie</a> - Universal payments and rewards ecosystem.</li>
-									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Dubois%20Gold%20%5B04.11.2020%5D.pdf" target="_blank" rel="noopener noreferrer">DuBois Gold</a> - DuBois Gold Market Solidity contracts.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
+					<!--qe-->
 					<div class="card">
 						<div id="headingQE">
 							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseQE"
-							   href="#qe-projects" role="button" aria-expanded="false">Quality Engineering</a>
+							   href="#qe-projects" role="button" aria-expanded="false">Quality</a>
 						</div>
 
 						<div id="collapseQE" class="collapse" aria-labelledby="headingQE" data-parent="#projectAccordion">
@@ -223,10 +244,11 @@
 						</div>
 					</div>
 
+					<!--trading-->
 					<div class="card">
 						<div id="headingTrd">
 							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseTrd"
-							   href="#trading-projects" role="button" aria-expanded="false">Trading Projects</a>
+							   href="#trading-projects" role="button" aria-expanded="false">Trading</a>
 						</div>
 
 						<div id="collapseTrd" class="collapse" aria-labelledby="headingTrd"
@@ -243,10 +265,11 @@
 						</div>
 					</div>
 
+					<!--other-->
 					<div class="card">
 						<div id="headingOther">
 							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseOther"
-							   href="#other-projects" role="button" aria-expanded="false">Other Projects</a>
+							   href="#other-projects" role="button" aria-expanded="false">Other</a>
 						</div>
 
 						<div id="collapseOther" class="collapse" aria-labelledby="headingOther" data-parent="#projectAccordion">
@@ -262,6 +285,7 @@
 						</div>
 					</div>
 
+					<!--oss-->
 					<div class="card">
 						<div id="headingOS">
 							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseOS"
