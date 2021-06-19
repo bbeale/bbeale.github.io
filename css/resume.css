@@ -177,6 +177,10 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
+#blocklist, #projectAccordion {
+  width: 85%;
+}
+
 #projectAccordion .card {
   background-color: black;
   border-style: hidden;
@@ -217,4 +221,17 @@ a:hover, a:focus, a:active {
   height: 4em;
   width: 4em;
   border-radius: 20%;
+}
+
+.nav-arrow {
+  /* position: relative; */
+  /* top: 35vh; */
+  margin: .3em;
+
+}
+
+@media (max-width: 768px) {
+  .nav-arrow {
+    display: none !important;
+  }
 }
