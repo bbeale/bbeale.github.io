@@ -224,14 +224,31 @@ a:hover, a:focus, a:active {
 }
 
 .nav-arrow {
-  /* position: relative; */
-  /* top: 35vh; */
   margin: .3em;
-
 }
 
 @media (max-width: 768px) {
   .nav-arrow {
     display: none !important;
   }
+  .judge-text {
+    text-align: center;
+
+  }
+  .judge {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.carousel-item > .card, .carousel-item > .card > .card-body {
+  min-height: 20vh;
+  background-color: black;
+  border: black;
+}
+
+#resourceText {
+  text-align: center;
+  min-height: 20vh;
 }
