@@ -1,2 +1,8 @@
 User-agent: *
-Disallow: /
+Allow: index.html
+Disallow: /audit-prep/
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /scss/
+Disallow: /vendor/
