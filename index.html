@@ -179,9 +179,57 @@
 
 						<p class="mb-4 text-justify">Many vulnerabilities can be uncovered using static and dynamic analysis techniques on either the underlying source code or binaries. My time reviewing bug bounty vulnerability submissions showed me that these vulnerabilities do not always present themselves in places that can be directly affected by users. Nevertheless, their potential to chain with other vulnerabilities necessitates their mitigation as well.</p>
 
-						<p class="mb-4 text-justify">Among my vulnerability findings include reflected and stored XSS, SQL injections,
+						<p class="mb-lg-5 text-justify">Among my vulnerability findings include reflected and stored XSS, SQL injections,
 							and a particularly interesting multipart session vulnerability in a learning management system.
 							To see more about my disclosures and mitigations, scroll down to the Projects section.</p>
+
+
+						<div class="bounties">
+							<div class="accordion" id="bountyAccordion">
+								<!--disclosures-->
+								<div class="card">
+									<div id="headingDisclosures">
+										<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseDisclosures"
+										   href="#disclosures" role="button" aria-expanded="false">Disclosures</a>
+									</div>
+
+									<div id="collapseDisclosures"
+										 class="collapse" aria-labelledby="headingDisclosures" data-parent="#bountyAccordion">
+										<div class="card card-body project-dropdown">
+											<ul class="project-list">
+												<li><a href="https://github.com/418sec/huntr/pull/741" target="_blank" rel="noopener noreferrer">spree</a> - Username enumeration.</li>
+												<li><a href="https://github.com/418sec/huntr/pull/411" target="_blank" rel="noopener noreferrer">useragent</a> - Catastrophic backtracking leading to ReDoS.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!--fixes-->
+								<div class="card">
+									<div id="headingFixes">
+										<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseFixes"
+										   href="#fixes" role="button" aria-expanded="false">Fixes</a>
+									</div>
+
+									<div id="collapseFixes"
+										 class="collapse" aria-labelledby="headingFixes" data-parent="#bountyAccordion">
+										<div class="card card-body project-dropdown">
+											<ul class="project-list">
+												<li><a href="https://github.com/418sec/mongo-parse/pull/1" target="_blank" rel="noopener noreferrer">mongo-parse</a> - Fixed arbitrary code injection.</li>
+												<li><a href="https://github.com/418sec/sheetjs/pull/1" target="_blank" rel="noopener noreferrer">sheetjs</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
+												<li><a href="https://github.com/418sec/urlregex/pull/1" target="_blank" rel="noopener noreferrer">urlregex</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
+												<li><a href="https://github.com/418sec/safer-eval/pull/1" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>
+												<li><a href="https://github.com/418sec/fun-map/pull/3" target="_blank" rel="noopener noreferrer">fun-map</a> - Fixed prototype pollution.</li>
+												<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
+												<li><a href="https://github.com/418sec/objutil/pull/1" target="_blank" rel="noopener noreferrer">objutil</a> - Fixed prototype pollution.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div><!--bounty accordion-->
+						</div><!--bounties-->
+
+
 					</div>
 					<div class="col-md-4">
 						<div class="card podc-card">
@@ -194,9 +242,11 @@
 								</a>
 							</div>
 						</div>
-					</div>
+					</div><!--podcast card-->
 				</div>
 				<hr class="mb-1">
+
+				<!--bounties back here?-->
 			</div>
 		</section>
 
@@ -270,44 +320,42 @@
 					<div class="card">
 						<div id="headingSec">
 							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseSec"
-							   href="#sec-projects" role="button" aria-expanded="false">Appsec</a>
+							   href="#sec-projects" role="button" aria-expanded="false">Security</a>
 						</div>
 
 						<div id="collapseSec"
 							 class="collapse" aria-labelledby="headingSec" data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
-								<p class="sec-header">Disclosures</p>
-								<ul class="project-list">
-									<li><a href="https://github.com/418sec/huntr/pull/741" target="_blank" rel="noopener noreferrer">spree</a> - Username enumeration.</li>
+<!--								<p class="sec-header">Disclosures</p>-->
+<!--								<ul class="project-list">-->
+<!--									<li><a href="https://github.com/418sec/huntr/pull/741" target="_blank" rel="noopener noreferrer">spree</a> - Username enumeration.</li>-->
 
-									<li><a href="https://github.com/418sec/huntr/pull/411" target="_blank" rel="noopener noreferrer">useragent</a> - Catastrophic backtracking leading to ReDoS.</li>
+<!--									<li><a href="https://github.com/418sec/huntr/pull/411" target="_blank" rel="noopener noreferrer">useragent</a> - Catastrophic backtracking leading to ReDoS.</li>-->
 
-								</ul>
+<!--								</ul>-->
 
 
-								<p class="sec-header">Fixes</p>
-								<ul class="project-list">
-									<li><a href="https://github.com/418sec/mongo-parse/pull/1" target="_blank" rel="noopener noreferrer">mongo-parse</a> - Fixed arbitrary code injection.</li>
+<!--								<p class="sec-header">Fixes</p>-->
+<!--								<ul class="project-list">-->
+<!--									<li><a href="https://github.com/418sec/mongo-parse/pull/1" target="_blank" rel="noopener noreferrer">mongo-parse</a> - Fixed arbitrary code injection.</li>-->
 
-									<li><a href="https://github.com/418sec/sheetjs/pull/1" target="_blank" rel="noopener noreferrer">sheetjs</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
+<!--									<li><a href="https://github.com/418sec/sheetjs/pull/1" target="_blank" rel="noopener noreferrer">sheetjs</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>-->
 
-									<li><a href="https://github.com/418sec/urlregex/pull/1" target="_blank" rel="noopener noreferrer">urlregex</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
+<!--									<li><a href="https://github.com/418sec/urlregex/pull/1" target="_blank" rel="noopener noreferrer">urlregex</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>-->
 
-									<li><a href="https://github.com/418sec/safer-eval/pull/1" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>
+<!--									<li><a href="https://github.com/418sec/safer-eval/pull/1" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>-->
 
-									<li><a href="https://github.com/418sec/fun-map/pull/3" target="_blank" rel="noopener noreferrer">fun-map</a> - Fixed prototype pollution.</li>
+<!--									<li><a href="https://github.com/418sec/fun-map/pull/3" target="_blank" rel="noopener noreferrer">fun-map</a> - Fixed prototype pollution.</li>-->
 
-									<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
+<!--									<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>-->
 
-									<li><a href="https://github.com/418sec/objutil/pull/1" target="_blank" rel="noopener noreferrer">objutil</a> - Fixed prototype pollution.</li>
-								</ul>
+<!--									<li><a href="https://github.com/418sec/objutil/pull/1" target="_blank" rel="noopener noreferrer">objutil</a> - Fixed prototype pollution.</li>-->
+<!--								</ul>-->
 
 								<p class="sec-header">Projects</p>
 								<ul class="project-list">
 									<li><a href="https://github.com/bbeale/GANSEC" target="_blank" rel="noopener noreferrer">GANSEC</a> - A <span><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">GAN</a></span>-based vulnerability scanner.</li>
-
 									<li><a href="https://github.com/bbeale/ARPcanary" target="_blank" rel="noopener noreferrer">ARPcanary</a> - A simple ARP spoof detector that I made while playing around with Scapy.</li>
-
 									<li><a href="https://github.com/BLSEC/toolbox" target="_blank" rel="noopener noreferrer">Malware Research</a> - A sample of miscellaneous malware written for academic/research purposes.</li>
 								</ul>
 							</div>
