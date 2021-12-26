@@ -36,9 +36,10 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blc">Blockchain</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sec">Appsec</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qe">Quality</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blc">Blockchain</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sec">Security</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#osint">OSINT</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
@@ -51,28 +52,56 @@
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
 			<div class="w-100">
 				<h1 class="mb-0"><span class="first-name">Ben</span>jamin Beale</h1>
-				<div class="subheading mb-5">Blockchain Engineer / KERNEL Fellow</div>
+				<div class="subheading mb-5">blockchain test engineer</div>
 				<p class="lead mb-5 mb-md-5 text-justify">
-					I am a full-stack software engineer with experience in blockchain security and development, quality
+					I am a software test engineer with experience in blockchain security and development, quality
 					engineering, application security, test tooling, and automation. These days, I build test automation infrastructure for
 					<a href="https://fioprotocol.io" target="_blank" rel="noopener noreferrer">FIO Protocol</a> and I audit
 					<a href="https://ethereum.org/en/glossary/#smart-contract" target="_blank" rel="noopener noreferrer">smart contracts</a> for various projects.
 					I'm also a <a href="https://gitcoin.co/blog/announcing-kernel/" target="_blank" rel="noopener noreferrer">Gitcoin KERNEL Fellow</a>.
 				</p>
 
-				<div class="media">
-					<div class="row media-body">
-						<div class="col-md-6 align-self-center">
-							<p class="mr-5 text-justify"><a href="https://www.tracelabs.org/get-involved" target="_blank" rel="noopener noreferrer">TraceLabs</a> is a nonprofit organization which does incredible work in the collection and analysis of <a href="https://en.wikipedia.org/wiki/Open-source_intelligence" target="_blank" rel="noopener noreferrer">open source intelligence</a> to aid in missing person searches.</p>
-							<p class="mr-5 text-justify font-weight-bold">Check their events page and join their Slack community to get involved.</p>
-						</div>
+				<hr class="m-0">
+			</div>
+		</section>
 
-						<div class="col-md-4">
-							<img src="img/TL-judge.png" class="align-self-center judge" alt="badge issued to judges who successfully completed the Trace Labs Global OSINT Search Party CTF 2021 06 event in June 2021.">
+		<hr class="m-0">
+
+		<!--Quality-->
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
+			<div class="w-100">
+				<h2 class="mb-5">Quality Engineering</h2>
+
+				<div class="row">
+					<div class="col-md-8">
+						<p class="lead mb-4 text-justify">I have a range of quality engineering experience which includes functional
+							testing, security testing, test planning, automated test development, along with the integration
+							of workflow and test tooling for the team -- some of which from third party vendors, with another
+							being a project of my own.</p>
+
+						<p class="mb-4 text-justify">I am knowledgable of current QE processes. I am equally, if not more
+							comfortable with opening up a code editor alongside of a test session to obtain insight that can
+							only be gained by looking <a href="https://en.wikipedia.org/wiki/White-box_testing"
+														 target="_blank" rel="noopener noreferrer">under the hood</a>.</p>
+
+						<p class="mb-4 text-justify">Perhaps more importantly, I am aware of the impact that a well-designed and thorough quality
+							engineering program can have on the number of bugs or defects. Even those that are related to
+							security.</p>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card podc-card">
+							<div class="card-body">
+								<a href="https://atsqa.org/certified-testers/profile/e438b9b3633047148b68a5f5c0597eb4" target="_blank" rel="noopener noreferrer">
+									<img src="img/CTFL-badge.png" class="align-self-center mr-3 img-fluid" alt="CTFL badge">
+								</a>
+							</div>
+							<div class="card-header">
+								<p class="mt-3 text-center">Official U.S. List of Certified & Credentialed Software Testers™ profile</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<hr class="m-0">
 			</div>
 		</section>
 
@@ -99,10 +128,9 @@
 							</div>
 							<div class="card-body">
 								<ul class="list-unstyled mb-4">
-									<li>Contract Code Review</li>
+									<li>Contract Security Review</li>
 									<li>Off-Chain Component Review</li>
-									<li>Local or Testnet Pentest</li>
-									<li>Mitigation Report</li>
+									<li>Mitigation Strategies</li>
 								</ul>
 								<a href="mailto:beale.ben@gmail.com?subject=Audit Request" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-danger mb-0">Secure*</a>
 							</div>
@@ -113,10 +141,9 @@
 							</div>
 							<div class="card-body">
 								<ul class="list-unstyled mb-4">
-									<li>Test Design</li>
-									<li>Manual Test Execution</li>
-									<li>Automated Test Development</li>
-									<li>Test Data Management</li>
+									<li>Functional Testing</li>
+									<li>Performance Testing</li>
+									<li>Test Automation</li>
 								</ul>
 								<a href="mailto:beale.ben@gmail.com?subject=QA Request" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-warning">Assure</a>
 							</div>
@@ -231,13 +258,13 @@
 					</div>
 					<div class="col-md-4">
 						<div class="card podc-card">
-							<div class="card-header">
-								<p class="lead mt-3 text-center">Listen to me on the huntr.dev appsec podcast!</p>
-							</div>
 							<div class="card-body">
 								<a href="https://huntr.dev/blog/podcast-6/" target="_blank" rel="noopener noreferrer">
 									<img src="img/huntr-logo.png" class="align-self-center mr-3 img-fluid" alt="huntr-logo">
 								</a>
+							</div>
+							<div class="card-header">
+								<p class="lead mt-3 text-center">My appearance on the huntr.dev appsec podcast</p>
 							</div>
 						</div>
 					</div><!--podcast card-->
@@ -248,27 +275,28 @@
 
 		<hr class="m-0">
 
-		<!--Quality-->
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
+		<!--OSINT-->
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="osint">
 			<div class="w-100">
-				<h2 class="mb-5">Quality Engineering</h2>
-				<p class="lead mb-4 text-justify">I have a range of quality engineering experience which includes functional
-					testing, security testing, test planning, automated test development, along with the integration
-					of workflow and test tooling for the team -- some of which from third party vendors, with another
-					being a project of my own.</p>
+				<div class="row">
+					<div class="col-md-8 my-auto">
+						<h2 class="mb-5">Open-Source Intelligence (OSINT)</h2>
+						<p class="mr-5 text-justify"><a href="https://www.tracelabs.org/get-involved" target="_blank" rel="noopener noreferrer">TraceLabs</a> is a nonprofit organization which does incredible work in the collection and analysis of <a href="https://en.wikipedia.org/wiki/Open-source_intelligence" target="_blank" rel="noopener noreferrer">open source intelligence</a> to aid in missing person searches.</p>
+						<p class="mr-5 text-justify">Be sure to visit their events page and join their Slack community to get involved.</p>
+					</div>
 
-				<p class="mb-4 text-justify">I am knowledgable of current QE processes. I am equally, if not more
-					comfortable with opening up a code editor alongside of a test session to obtain insight that can
-					only be gained by looking <a href="https://en.wikipedia.org/wiki/White-box_testing"
-												 target="_blank" rel="noopener noreferrer">under the hood</a>.</p>
-
-				<p class="mb-4 text-justify">Perhaps more importantly, I am aware of the impact that a well-designed and thorough quality
-					engineering program can have on the number of bugs or defects. Even those that are related to
-					security.</p>
+					<div class="col-md-4">
+						<div class="card podc-card">
+							<div class="card-body">
+								<img src="img/TL-judge.png" class="align-self-center mr-3 img-fluid" alt="badge issued to judges who successfully completed the Trace Labs Global OSINT Search Party CTF 2021 06 event in June 2021">
+								<img src="img/The-OSINTion-IMINT-OCR-and-Video-Analysis-2021-12-15.png" class="align-self-center mr-3 img-fluid" alt="badge issued to students who successfully completed The OSINTion IMINT, OCR, and Video Analysis - 2021-12-15">
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="m-0">
 			</div>
 		</section>
-
-		<hr class="m-0">
 
 		<!--Contact-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
