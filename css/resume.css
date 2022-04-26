@@ -218,8 +218,8 @@ a:hover, a:focus, a:active {
 }
 
 .resource-icon {
-  height: 4em;
-  width: 4em;
+  height: 2em;
+  width: 2em;
   border-radius: 20%;
 }
 
