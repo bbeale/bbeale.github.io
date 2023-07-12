@@ -26,22 +26,26 @@
 </head>
 
 <body id="page-top">
+
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<span class="d-block d-lg-none">Benjamin Beale</span>
-			<span class="d-none d-lg-block"><img class="img-fluid img-profile" href="#about" src="img/pumkin.png" alt="pumkin"></span>
+			<span class="d-none d-lg-block"><img class="img-fluid img-profile" href="#about" src="img/pumkin.png"
+												 alt="pumkin"></span>
 		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blc">Blockchain</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qe">Quality</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sec">Security</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#qe">Quality</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blc">Blockchain</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#osint">OSINT</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -65,21 +69,290 @@
 
 		<hr class="m-0">
 
+		<!--Security-->
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sec">
+			<div class="w-100">
+				<div class="row">
+					<div class="col-md-8">
+						<h2 class="mb-5">Security</h2>
+						<p class="mb-4 text-justify">During my time across varying software engineering roles and
+							teams, I have integrated offensive security practices alongside dev, QA, and other
+							security efforts, often working in a purple team-like capacity.</p>
+
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<p class="mb-4 text-justify">
+										As a QA engineer, I conducted vulnerability assessments and
+										penetration test re-runs after engaging 3rd party security vendors, and worked closely with
+										the	development team to verify mitigations were correctly in place. Furthermore, I have
+										added layers of vulnerability checks to automated test suites.
+									</p>
+
+									<p class="mb-4 text-justify">
+										As a DevSecOps engineer, I have performed several vulnerability audits within the scope
+										of the work.
+									</p>
+								</div>
+								<div class="col">
+									<p class="mb-4 text-justify">
+										As a security analyst charged with reviewing bug bounties, I gained a unique hands-on
+										perspective on the attack and defense sides of a vulnerability. Replicating exploit steps
+										submitted by other ethical hackers was an invaluable learning experience.
+									</p>
+
+									<p class="mb-4 text-justify">
+										Auditing conventional application and Web3 smart contract code has shown me that
+										vulnerabilities do not always present themselves in places that can be
+										directly affected or seen by users.
+									</p>
+								</div>
+							</div>
+						</div>
+						<p class="lead mb-4 text-justify">I am motivated by studying the various ways
+							in which software can break or behave differently from what is expected.</p>
+					</div>
+
+					<div class="col-md-4">
+						<!-- Profile badge from THM -->
+						<script src="https://tryhackme.com/badge/305619"></script>
+
+						<!-- same as the THM badge but recreated for LetsDefend-->
+						<div class="badge badge_margin"
+							 onclick="location.href='https://app.letsdefend.io/public-profile/user/blsec/25dcf1f8-7434-411a-b431-f9e209e94ee9'">
+
+							<div class="avi_container">
+								<div class="avi ld_avi"></div>
+							</div>
+
+							<div class="badge_container ld_badge_container">
+								<div class="badge_font">
+									<p class="badge_line" style="margin-bottom: 3px">
+										<span class="badge_username">blsec</span> <span class="badge_rank">[Incident
+										Responder]</span><br>
+									</p>
+									<p class="badge_line" style="margin-bottom: 1px; display: flex; align-items: center">
+										<span class="badge_artifact">View public profile</span><br>
+									</p>
+									<p class="badge_line">
+										<a href="https://letsdefend.io" class="badge_link">letsdefend.io</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- ...and once more for huntr podcast -->
+						<div class="badge badge_margin"
+							 onclick="location.href='https://huntr.dev/blog/podcast-6/'">
+
+							<div class="avi_container">
+								<div class="avi h_avi" ></div>
+							</div>
+
+							<div class="badge_container h_badge_container">
+								<div class="badge_font">
+									<p class="badge_line" style="margin-bottom: 3px">
+										<span class="badge_username">bbeale</span> <span class="badge_rank">[Sheriff]</span><br>
+									</p>
+									<p class="badge_line" style="margin-bottom: 1px; display: flex; align-items: center">
+										<span class="badge_artifact">My podcast appearance</span><br>
+									</p>
+									<p class="badge_line">
+										<a href="https://huntr.dev/" class="badge_link">huntr.dev</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<hr class="m-4">
+
+						<div class="bounties">
+							<div class="accordion" id="bountyAccordion">
+
+								<!--disclosures-->
+								<div class="card">
+									<div id="headingDisclosures">
+										<a class="btn btn-dark project-type" data-toggle="collapse"
+										   data-target="#collapseDisclosures" href="#disclosures" role="button"
+										   aria-expanded="false">Public Disclosures</a>
+									</div>
+
+									<div id="collapseDisclosures"
+										 class="collapse" aria-labelledby="headingDisclosures"
+										 data-parent="#bountyAccordion">
+										<div class="card card-body project-dropdown">
+											<ul class="project-list">
+												<li><a href="https://github.com/418sec/huntr/pull/741"
+													   target="_blank" rel="noopener noreferrer">spree</a> - Username
+													enumeration</li>
+												<li><a href="https://github.com/418sec/huntr/pull/411"
+													   target="_blank" rel="noopener noreferrer">useragent</a> -
+													ReDoS</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!--fixes-->
+								<div class="card">
+									<div id="headingFixes">
+										<a class="btn btn-dark project-type" data-toggle="collapse"
+										   data-target="#collapseFixes" href="#fixes" role="button"
+										   aria-expanded="false">Fixes</a>
+									</div>
+
+									<div id="collapseFixes"
+										 class="collapse" aria-labelledby="headingFixes" data-parent="#bountyAccordion">
+										<div class="card card-body project-dropdown">
+											<ul class="project-list">
+												<li><a href="https://github.com/418sec/mongo-parse/pull/1"
+													   target="_blank" rel="noopener noreferrer">mongo-parse</a> -
+													Code injection.</li>
+												<li><a href="https://github.com/418sec/sheetjs/pull/1"
+													   target="_blank" rel="noopener noreferrer">sheetjs</a> - ReDoS</li>
+												<li><a href="https://github.com/418sec/urlregex/pull/1"
+													   target="_blank" rel="noopener noreferrer">urlregex</a> - ReDoS</li>
+												<li><a href="https://github.com/418sec/safer-eval/pull/1"
+													   target="_blank" rel="noopener noreferrer">safer-eval</a> -
+													Command injection</li>
+												<li><a href="https://github.com/418sec/fun-map/pull/3"
+													   target="_blank" rel="noopener noreferrer">fun-map</a> -
+													Prototype pollution</li>
+												<li><a href="https://github.com/418sec/bson-objectid/pull/2"
+													   target="_blank" rel="noopener noreferrer">bson-objectid</a> -
+													Insufficient input validation</li>
+												<li><a href="https://github.com/418sec/objutil/pull/1"
+													   target="_blank" rel="noopener noreferrer">objutil</a> -
+													Prototype pollution</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!--bloc-->
+								<div class="card">
+									<div id="headingBloc">
+										<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseBloc"
+										   href="#bloc-projects" role="button" aria-expanded="false">Smart Contract Audits</a>
+									</div>
+
+									<div id="collapseBloc"
+										 class="collapse" aria-labelledby="headingBloc" data-parent="#bountyAccordion">
+										<div class="card card-body project-dropdown">
+											<ul class="project-list">
+												<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Mobie%20%5B24-09-2020%5D%20(1).pdf" target="_blank" rel="noopener noreferrer">Mobie</a> - Universal payments and rewards ecosystem.</li>
+												<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Dubois%20Gold%20%5B04.11.2020%5D.pdf" target="_blank" rel="noopener noreferrer">DuBois Gold</a> - DuBois Gold Market Solidity contracts.</li>
+												<li><a href="https://github.com/cryptonicsconsulting/audits/blob/master/dock/Audit%20Report%20-%20Dock%20Token%20Migration.pdf" target="_blank" rel="noopener noreferrer">Dock.io</a> - High-performance distributed ledger technology for Verifiable Credentials.</li>
+												<li><a href="https://github.com/best-practicers/reviews/tree/main/reviews/Learning%20Curve" target="_blank" rel="noopener noreferrer">Gitcoin LearningCurve</a> - Smart contracts for free and continuous online learning environments.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div><!--bounty accordion-->
+						</div><!--bounties-->
+						<hr class="m-4">
+
+					</div>
+				</div>
+				<hr class="mb-0">
+			</div>
+		</section>
+
+		<hr class="m-0">
+
+		<!--Quality-->
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
+			<div class="w-100">
+				<div class="row">
+					<div class="col-md-8">
+						<h2 class="mb-5">Quality Engineering</h2>
+						<p class="lead mb-4 text-justify">I have a range of quality engineering experience which includes functional
+							testing, security testing, test planning, automated test development, along with the integration
+							of workflow and test tooling for the team -- some of which from third party vendors, with another
+							being a project of my own.</p>
+
+						<p class="mb-4 text-justify">I am knowledgable of current QE processes. I am equally, if not more
+							comfortable with opening up a code editor alongside of a test session to obtain insight that can
+							only be gained by looking <a href="https://en.wikipedia.org/wiki/White-box_testing"
+														 target="_blank" rel="noopener noreferrer">under the hood</a>.</p>
+
+						<p class="mb-4 text-justify">Perhaps more importantly, I am aware of the impact that a well-designed and thorough quality
+							engineering program can have on the number of bugs or defects. Even those that are related to
+							security.</p>
+
+						<div class="row mt-5">
+							<div class="col-md-8">
+								<p class="m-2 text-justify">Contact me to go over your project's quality engineering needs.</p>
+							</div>
+							<div class="col-md-4 mt-auto mb-auto">
+								<a class="btn btn-lg btn-block btn-outline-warning" href="mailto:beale.ben@gmail.com?subject=QA+Request" target="_blank" rel="noopener noreferrer">Test Your Project</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card creds-card">
+							<div class="card-body">
+								<a href="https://atsqa.org/certified-testers/profile/e438b9b3633047148b68a5f5c0597eb4" target="_blank" rel="noopener noreferrer">
+									<img src="img/CTFL-badge.png" class="align-self-center mr-3 img-fluid" alt="CTFL badge">
+								</a>
+							</div>
+							<div class="card-header">
+								<p class="mt-3 text-center">Official U.S. List of Certified & Credentialed Software Testers™ profile</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr class="m-0">
+
 		<!--Blockchain-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blc">
 			<div class="w-100">
-				<h2 class="mb-5">Blockchain</h2>
-				<p class="lead mb-4 text-justify">Blockchain applications (dApps) need to be more thoroughly tested than comparable web2 apps.</p>
+				<div class="row">
+					<div class="col-md-8">
+						<h2 class="mb-5">Blockchain</h2>
 
-				<p class="text-justify">While all software should be tested to minimize risks and maximize user experience,
-					due to the immutability of public blockchains, a dApp or smart contract
-					deployed to mainnet with an overlooked vulnerability will forever remain in the wild, putting users and their funds at risk.
-					This is extremely dangerous, given the large sums of crypto assets at stake across many projects.</p>
+						<p class="lead mb-4 text-justify">Blockchain applications (dApps) need to be more thoroughly tested than comparable web2 apps.</p>
 
-				<hr class="mb-1">
+						<p class="text-justify">While all software should be tested to minimize risks and maximize user experience,
+							due to the immutability of public blockchains, a dApp or smart contract
+							deployed to mainnet with an overlooked vulnerability will forever remain in the wild, putting users and their funds at risk.
+							This is extremely dangerous, given the large sums of crypto assets at stake across many projects.</p>
 
-				<div class="container">
-					<div class="card-deck mb-3 text-center">
+						<hr class="mb-1">
+
+						<p class="mb-4 text-center">
+							I bring to the table a unique mix of development, QA, application security, and
+							blockchain experience, giving me an edge over auditors from other tech backgrounds and
+							developers from non-blockchain or non-security backgrounds.
+						</p>
+
+						<div class="w-95 mt-0 mb-0 ml-auto mr-auto">
+							<div class="prep-card">
+								<div class="card-body">
+									If your project is
+									<ul>
+										<li class="ml-lg-5">early stage</li>
+										<li class="ml-lg-5">not logistically prepared for a full audit</li>
+										<li class="ml-lg-5">already covered by a trusted audit partner</li>
+									</ul>
+									<div class="row">
+										<div class="col-md-8">
+											<p class="m-2 text-justify">Feel free to contact me anyway, I would be happy to go over <a href="audit-prep/index.html" target="_blank" rel="noopener noreferrer">how</a> I might be able to help improve your security posture and maximize the impact of any planned or upcoming audits.</p>
+										</div>
+										<div class="col-md-4 mt-auto mb-auto">
+											<a class="btn btn-lg btn-block btn-outline-danger" href="mailto:beale.ben@gmail.com?subject=Audit+Prep+Request" target="_blank" rel="noopener noreferrer">Prep Your Project</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--col-md-8-->
+
+					<div class="col-md-4">
 						<div class="card mb-2 shadow-sm">
 							<div class="card-header">
 								<h4 class="my-0 font-weight-normal">AUDIT <i class="fa fa-shield-alt"></i></h4>
@@ -119,164 +392,8 @@
 								<a href="mailto:beale.ben@gmail.com?subject=Dev+Request" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-primary">Build</a>
 							</div>
 						</div>
-					</div>
-
-					<p class="text-center">I bring to the table a unique mix of development, QA, application security,-->
-						and blockchain skills, which grant me an edge over auditors from other tech backgrounds and developers
-						from non-blockchain or non-security backgrounds.
-				</div>
-
-				<div class="w-75 mt-0 mb-0 ml-auto mr-auto">
-					<div class="plan-card">
-						<div class="card-body">
-							*If your project is
-							<ul>
-								<li class="ml-lg-5">early stage</li>
-								<li class="ml-lg-5">not logistically prepared for a full audit</li>
-								<li class="ml-lg-5">already covered by a trusted audit partner</li>
-							</ul>
-							<div class="row">
-								<div class="col-md-8">
-									<p class="m-2 text-justify">Feel free to contact me anyway, I would be happy to go over <a href="audit-prep/index.html" target="_blank" rel="noopener noreferrer">how</a> I might be able to help improve your security posture and maximize the impact of any planned or upcoming audits.</p>
-								</div>
-								<div class="col-md-4 mt-auto mb-auto">
-									<a class="btn btn-lg btn-block btn-outline-danger" href="mailto:beale.ben@gmail.com?subject=Audit+Prep+Request" target="_blank" rel="noopener noreferrer">Prep Your Project</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<hr class="m-0">
-
-		<!--Quality-->
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="qe">
-			<div class="w-100">
-				<h2 class="mb-5">Quality Engineering</h2>
-
-				<div class="row">
-					<div class="col-md-8">
-						<p class="lead mb-4 text-justify">I have a range of quality engineering experience which includes functional
-							testing, security testing, test planning, automated test development, along with the integration
-							of workflow and test tooling for the team -- some of which from third party vendors, with another
-							being a project of my own.</p>
-
-						<p class="mb-4 text-justify">I am knowledgable of current QE processes. I am equally, if not more
-							comfortable with opening up a code editor alongside of a test session to obtain insight that can
-							only be gained by looking <a href="https://en.wikipedia.org/wiki/White-box_testing"
-														 target="_blank" rel="noopener noreferrer">under the hood</a>.</p>
-
-						<p class="mb-4 text-justify">Perhaps more importantly, I am aware of the impact that a well-designed and thorough quality
-							engineering program can have on the number of bugs or defects. Even those that are related to
-							security.</p>
-
-						<div class="row mt-5">
-							<div class="col-md-8">
-								<p class="m-2 text-justify">Contact me to go over your project's quality engineering needs.</p>
-							</div>
-							<div class="col-md-4 mt-auto mb-auto">
-								<a class="btn btn-lg btn-block btn-outline-warning" href="mailto:beale.ben@gmail.com?subject=QA+Request" target="_blank" rel="noopener noreferrer">Test Your Project</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card podc-card">
-							<div class="card-body">
-								<a href="https://atsqa.org/certified-testers/profile/e438b9b3633047148b68a5f5c0597eb4" target="_blank" rel="noopener noreferrer">
-									<img src="img/CTFL-badge.png" class="align-self-center mr-3 img-fluid" alt="CTFL badge">
-								</a>
-							</div>
-							<div class="card-header">
-								<p class="mt-3 text-center">Official U.S. List of Certified & Credentialed Software Testers™ profile</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<hr class="m-0">
-
-		<!--Security-->
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sec">
-			<div class="w-100">
-				<h2 class="mb-5">Application Security</h2>
-
-				<div class="row">
-					<div class="col-md-8">
-						<p class="lead mb-4 text-justify">
-							I am highly motivated by studying the ways in which software behavior can differ
-							from what the end user might expect.</p>
-
-						<p class="mb-4 text-justify">Many vulnerabilities can be uncovered using static and dynamic analysis techniques on either the underlying source code or binaries. My time reviewing bug bounty vulnerability submissions showed me that these vulnerabilities do not always present themselves in places that can be directly affected by users. Nevertheless, their potential to chain with other vulnerabilities necessitates their mitigation as well.</p>
-
-						<p class="mb-lg-5 text-justify">Among my vulnerability findings include reflected and stored XSS, SQL injections,
-							and a particularly interesting multipart session vulnerability in a learning management system.
-							To see more about my disclosures and mitigations, scroll down to the Projects section.</p>
-
-
-						<div class="bounties">
-							<div class="accordion" id="bountyAccordion">
-								<!--disclosures-->
-								<div class="card">
-									<div id="headingDisclosures">
-										<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseDisclosures"
-										   href="#disclosures" role="button" aria-expanded="false">Disclosures</a>
-									</div>
-
-									<div id="collapseDisclosures"
-										 class="collapse" aria-labelledby="headingDisclosures" data-parent="#bountyAccordion">
-										<div class="card card-body project-dropdown">
-											<ul class="project-list">
-												<li><a href="https://github.com/418sec/huntr/pull/741" target="_blank" rel="noopener noreferrer">spree</a> - Username enumeration.</li>
-												<li><a href="https://github.com/418sec/huntr/pull/411" target="_blank" rel="noopener noreferrer">useragent</a> - Catastrophic backtracking leading to ReDoS.</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<!--fixes-->
-								<div class="card">
-									<div id="headingFixes">
-										<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseFixes"
-										   href="#fixes" role="button" aria-expanded="false">Fixes</a>
-									</div>
-
-									<div id="collapseFixes"
-										 class="collapse" aria-labelledby="headingFixes" data-parent="#bountyAccordion">
-										<div class="card card-body project-dropdown">
-											<ul class="project-list">
-												<li><a href="https://github.com/418sec/mongo-parse/pull/1" target="_blank" rel="noopener noreferrer">mongo-parse</a> - Fixed arbitrary code injection.</li>
-												<li><a href="https://github.com/418sec/sheetjs/pull/1" target="_blank" rel="noopener noreferrer">sheetjs</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
-												<li><a href="https://github.com/418sec/urlregex/pull/1" target="_blank" rel="noopener noreferrer">urlregex</a> - Fixed Regular Expression Denial of Service (ReDoS).</li>
-												<li><a href="https://github.com/418sec/safer-eval/pull/1" target="_blank" rel="noopener noreferrer">safer-eval</a> - Mitigation for arbitrary code execution / sandbox breakout.</li>
-												<li><a href="https://github.com/418sec/fun-map/pull/3" target="_blank" rel="noopener noreferrer">fun-map</a> - Fixed prototype pollution.</li>
-												<li><a href="https://github.com/418sec/bson-objectid/pull/2" target="_blank" rel="noopener noreferrer">bson-objectid</a> - Fixed insufficient input validation.</li>
-												<li><a href="https://github.com/418sec/objutil/pull/1" target="_blank" rel="noopener noreferrer">objutil</a> - Fixed prototype pollution.</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div><!--bounty accordion-->
-						</div><!--bounties-->
-					</div>
-					<div class="col-md-4">
-						<div class="card podc-card">
-							<div class="card-body">
-								<a href="https://huntr.dev/blog/podcast-6/" target="_blank" rel="noopener noreferrer">
-									<img src="img/huntr-logo.png" class="align-self-center mr-3 img-fluid" alt="huntr-logo">
-								</a>
-							</div>
-							<div class="card-header">
-								<p class="lead mt-3 text-center">My appearance on the huntr.dev appsec podcast</p>
-							</div>
-						</div>
-					</div><!--podcast card-->
-				</div>
-				<hr class="mb-1">
+					</div><!--col-md-4-->
+				</div><!--row-->
 			</div>
 		</section>
 
@@ -293,7 +410,7 @@
 					</div>
 
 					<div class="col-md-4">
-						<div class="card podc-card">
+						<div class="card creds-card">
 							<div class="card-body">
 								<a href="https://api.ca.badgr.io/public/assertions/2ZDhNNoKT5-ehqdb9aWjTw?identity__email=beale.ben%40gmail.com" target="_blank" rel="noopener noreferrer">
 									<img src="img/TL-judge.png" class="align-self-center mr-3 img-fluid" alt="badge issued to judges who successfully completed the Trace Labs Global OSINT Search Party CTF 2021 06 event in June 2021">
@@ -305,9 +422,25 @@
 						</div>
 					</div>
 				</div>
-				<hr class="m-0">
 			</div>
 		</section>
+
+		<hr class="m-0">
+
+		<!--Contact-->
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
+			<div class="w-100">
+				<h2 class="mb-5">Get a hold of me</h2>
+				<p class="lead mb-5 mb-md-5">Feel free to send me an email, connect with me on LinkedIn, or view my GitHub profile.</p>
+				<div class="social-icons">
+					<a href="mailto:beale.ben@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+					<a href="https://www.linkedin.com/in/beale1bj" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/bbeale" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+		</section>
+
+		<hr class="m-0">
 
 		<!--Projects-->
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
@@ -315,26 +448,6 @@
 				<h2 class="mb-5">Projects</h2>
 
 				<div class="accordion" id="projectAccordion">
-					<!--bloc-->
-					<div class="card">
-						<div id="headingBloc">
-							<a class="btn btn-dark project-type" data-toggle="collapse" data-target="#collapseBloc"
-							   href="#bloc-projects" role="button" aria-expanded="false">Smart Contract Audits</a>
-						</div>
-
-						<div id="collapseBloc"
-							 class="collapse show" aria-labelledby="headingBloc" data-parent="#projectAccordion">
-							<div class="card card-body project-dropdown">
-								<ul class="project-list">
-									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Mobie%20%5B24-09-2020%5D%20(1).pdf" target="_blank" rel="noopener noreferrer">Mobie</a> - Universal payments and rewards ecosystem.</li>
-									<li><a href="https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Dubois%20Gold%20%5B04.11.2020%5D.pdf" target="_blank" rel="noopener noreferrer">DuBois Gold</a> - DuBois Gold Market Solidity contracts.</li>
-									<li><a href="https://github.com/cryptonicsconsulting/audits/blob/master/dock/Audit%20Report%20-%20Dock%20Token%20Migration.pdf" target="_blank" rel="noopener noreferrer">Dock.io</a> - High-performance distributed ledger technology for Verifiable Credentials.</li>
-									<li><a href="https://github.com/best-practicers/reviews/tree/main/reviews/Learning%20Curve" target="_blank" rel="noopener noreferrer">Gitcoin LearningCurve</a> - Smart contracts for free and continuous online learning environments.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
 					<!--sec-->
 					<div class="card">
 						<div id="headingSec">
@@ -343,12 +456,20 @@
 						</div>
 
 						<div id="collapseSec"
-							 class="collapse" aria-labelledby="headingSec" data-parent="#projectAccordion">
+							 class="collapse show" aria-labelledby="headingSec" data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
-									<li><a href="https://github.com/bbeale/GANSEC" target="_blank" rel="noopener noreferrer">GANSEC</a> - A <span><a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">GAN</a></span>-based vulnerability scanner.</li>
-									<li><a href="https://github.com/bbeale/ARPcanary" target="_blank" rel="noopener noreferrer">ARPcanary</a> - A simple ARP spoof detector that I made while playing around with Scapy.</li>
-									<li><a href="https://github.com/BLSEC/toolbox" target="_blank" rel="noopener noreferrer">Malware Research</a> - A sample of miscellaneous malware written for academic/research purposes.</li>
+									<li><a href="https://github.com/bbeale/GANSEC" target="_blank"
+										   rel="noopener noreferrer">GANSEC</a> - A <span><a
+											href="https://en.wikipedia.org/wiki/Generative_adversarial_network"
+											target="_blank" rel="noopener noreferrer">GAN</a></span>-based
+										vulnerability scanner.</li>
+									<li><a href="https://github.com/bbeale/ARPcanary" target="_blank"
+										   rel="noopener noreferrer">ARPcanary</a> - A simple ARP spoof detector that
+										I made while playing around with Scapy.</li>
+									<li><a href="https://github.com/BLSEC/toolbox" target="_blank"
+										   rel="noopener noreferrer">Malware Research</a> - A sample of miscellaneous
+										malware written for academic/research purposes.</li>
 								</ul>
 							</div>
 						</div>
@@ -361,14 +482,22 @@
 							   href="#qe-projects" role="button" aria-expanded="false">Quality</a>
 						</div>
 
-						<div id="collapseQE" class="collapse" aria-labelledby="headingQE" data-parent="#projectAccordion">
+						<div id="collapseQE" class="collapse" aria-labelledby="headingQE"
+							 data-parent="#projectAccordion">
 							<div class="card card-body project-dropdown">
 								<ul class="project-list">
-									<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank" rel="noopener noreferrer">Test Automation Samples</a> - Examples of past automated tests I've written in PHP and Python with identifying context stripped out.</li>
+									<li><a href="https://github.com/bbeale/test_automation_samples" target="_blank"
+										   rel="noopener noreferrer">Test Automation Samples</a> - Examples of past
+										automated tests I've written in PHP and Python with identifying context
+										stripped out.</li>
 
-									<li><a href="https://github.com/bbeale/GitTreasures" target="_blank" rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams connecting Git/GitLab, Jira, Trello and TestRail.</li>
+									<li><a href="https://github.com/bbeale/GitTreasures" target="_blank"
+										   rel="noopener noreferrer">GitTreasures</a> - An integration for QE teams
+										connecting Git/GitLab, Jira, Trello and TestRail.</li>
 
-									<li><a href="https://github.com/bbeale/TestRailYak" target="_blank" rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for interacting with the TestRail API.</li>
+									<li><a href="https://github.com/bbeale/TestRailYak" target="_blank"
+										   rel="noopener noreferrer">TestRailYak</a> - A Python wrapper for
+										interacting with the TestRail API.</li>
 								</ul>
 							</div>
 						</div>
@@ -442,22 +571,6 @@
 		</section>
 
 		<hr class="m-0">
-
-		<!--Contact-->
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
-			<div class="w-100">
-				<h2 class="mb-5">Get a hold of me</h2>
-				<p class="lead mb-5 mb-md-5">Feel free to send me an email, connect with me on LinkedIn, or view my GitHub profile.</p>
-				<div class="social-icons">
-					<a href="mailto:beale.ben@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-					<a href="https://www.linkedin.com/in/beale1bj" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-					<a href="https://github.com/bbeale" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-				</div>
-			</div>
-		</section>
-
-		<hr class="m-0">
-
 	</div>
 
 	<!-- Bootstrap core JavaScript -->
