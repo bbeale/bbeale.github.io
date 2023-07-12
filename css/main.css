@@ -1,5 +1,6 @@
 /*!
- * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Taken from:
+ *  Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
@@ -141,10 +142,6 @@ section.resume-section {
   min-height: 100vh;
 }
 
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -177,8 +174,12 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
-#blocklist, #projectAccordion {
+#projectAccordion {
   width: 85%;
+}
+
+#bountyAccordion {
+  width: 100%;
 }
 
 #projectAccordion .card {
@@ -200,31 +201,12 @@ a:hover, a:focus, a:active {
   border-right-style: hidden;
 }
 
-.sec-header {
-  padding-left: 2vw;
-}
-
 .project-list {
   list-style-type: none;
 }
 
 .comingSoon {
   color: white;
-}
-
-.huntr-icon {
-  height: 4em;
-  width: 4em;
-}
-
-.resource-icon {
-  height: 2em;
-  width: 2em;
-  border-radius: 20%;
-}
-
-.nav-arrow {
-  margin: .3em;
 }
 
 @media (max-width: 768px) {
@@ -240,17 +222,6 @@ a:hover, a:focus, a:active {
     display: block;
     margin: 0 auto;
   }
-}
-
-.carousel-item > .card, .carousel-item > .card > .card-body {
-  min-height: 20vh;
-  background-color: black;
-  border: black;
-}
-
-#resourceText {
-  text-align: center;
-  min-height: 20vh;
 }
 
 /**
@@ -277,7 +248,7 @@ a:hover, a:focus, a:active {
   border-radius: 0.25rem;
 }
 
-.plan-card {
+.prep-card {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +261,7 @@ a:hover, a:focus, a:active {
   border-radius: 0.25rem;
 }
 
-.podc-card {
+.creds-card {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -301,4 +272,131 @@ a:hover, a:focus, a:active {
   background-color: #020202;
   background-clip: border-box;
   border-radius: 0.25rem;
+}
+
+.badge_container {
+  margin-left: 25px;
+  width: 220px;
+  height: 56px;
+  border-radius: 5px;
+  text-align: left;
+  background-size: 23px 23px;
+  background-position: right 5px bottom 5px;
+  background-repeat: no-repeat;
+}
+
+.ld_badge_container, .ld_avi {
+  background-image: url(/img/ld-logo.png);
+ }
+
+.ld_avi {
+  border: 3px solid rgb(0, 237, 225);
+}
+
+.h_badge_container, .h_avi {
+  background-image: url(/img/huntr-logo.png);
+}
+
+.h_avi {
+  border: 3px solid rgb(248, 90, 82)
+}
+
+.badge {
+  width: 210px;
+  display: inline-table;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.badge_margin {
+  margin-top: 5px;
+}
+
+.badge:hover {
+  cursor: pointer;
+}
+
+.avi_container {
+  width: auto;
+  border-radius: 4px;
+  margin-right: 0px;
+}
+
+.avi {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  box-sizing: content-box; /* Needed for border to stop changing image width*/
+  background-color: #343c42;
+  box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  box-shadow: 0 0px 3px 0px #303030;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ubuntumono/v6/ViZhet7Ak-LRXZMXzuAfkY4P5ICox8Kq3LLUNMylGO4.woff2)
+  format('woff2');
+}
+
+.badge_font {
+  font-family: 'Roboto', monospace; /*might keep this one for THM only and pick a different font for the other badges*/
+  box-sizing: content-box;
+  height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.badge_username {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: #000 0 0 6px;
+}
+
+.badge_artifact {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.badge_rank {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.badge_line {
+  line-height: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.badge_link {
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+  animation: flicker 17s infinite;
+}
+
+.badge_link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.badge_link:visited {
+  color: #fff;
 }
