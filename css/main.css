@@ -136,6 +136,7 @@ p.lead {
 }
 
 section.resume-section {
+  margin: 0 auto;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
@@ -144,8 +145,7 @@ section.resume-section {
 
 @media (min-width: 768px) {
   section.resume-section {
-    margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
@@ -274,6 +274,7 @@ a:hover, a:focus, a:active {
   background-color: #020202;
   background-clip: border-box;
   border-radius: 0.25rem;
+  text-align: center;
 }
 
 .badge_container {
@@ -401,4 +402,9 @@ a:hover, a:focus, a:active {
 
 .badge_link:visited {
   color: #fff;
+}
+
+.ctfl-badge {
+  /*margin: 0 auto;*/
+  text-align: center !important;
 }
