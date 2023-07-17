@@ -145,7 +145,7 @@ section.resume-section {
 
 @media (min-width: 768px) {
   section.resume-section {
-    max-width: 90%;
+    max-width: 100%;
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
@@ -203,27 +203,22 @@ a:hover, a:focus, a:active {
   border-right-style: hidden;
 }
 
-.project-list {
+.project-list, .bounty-list {
   list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .bounties a {
+    font-size: 1.0em;
+  }
+
+  .bounty-list {
+    padding-inline-start: 1.2em;
+  }
 }
 
 .comingSoon {
   color: white;
-}
-
-@media (max-width: 768px) {
-  .nav-arrow {
-    display: none !important;
-  }
-  .judge-text {
-    text-align: center;
-
-  }
-  .judge {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 /**
@@ -238,16 +233,26 @@ a:hover, a:focus, a:active {
 }
 
 .card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
   background-color: #0e0e0e;
-  background-clip: border-box;
-  border-radius: 0.25rem;
+}
+
+@media (min-width: 740px) {
+  .service-card h4 {
+    word-wrap: normal;
+    font-size: 1.2rem;
+  }
+
+  .service-card li {
+    font-size: 0.8rem;
+  }
+
+  .service-card .btn {
+    font-size: 0.9rem;
+  }
+}
+
+.service-card .btn {
+  align-content: end;
 }
 
 .prep-card {
@@ -257,10 +262,16 @@ a:hover, a:focus, a:active {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
-  word-wrap: break-word;
   background-color: #0f0f0f;
   background-clip: border-box;
   border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .prep-card a {
+    text-align: left;
+    font-size: 0.7em;
+  }
 }
 
 .creds-card {
@@ -275,6 +286,13 @@ a:hover, a:focus, a:active {
   background-clip: border-box;
   border-radius: 0.25rem;
   text-align: center;
+}
+
+@media (max-width: 740px) {
+  .creds-card {
+    margin: 0 auto;
+    width: 60%;
+  }
 }
 
 .badge_container {
@@ -405,6 +423,5 @@ a:hover, a:focus, a:active {
 }
 
 .ctfl-badge {
-  /*margin: 0 auto;*/
   text-align: center !important;
 }
