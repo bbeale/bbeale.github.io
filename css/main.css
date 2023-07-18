@@ -181,7 +181,8 @@ a:hover, a:focus, a:active {
 }
 
 #bountyAccordion {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #projectAccordion .card {
@@ -293,6 +294,10 @@ a:hover, a:focus, a:active {
     margin: 0 auto;
     width: 60%;
   }
+}
+
+.badge-card {
+  margin: 0 auto;
 }
 
 .badge_container {
