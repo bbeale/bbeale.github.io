@@ -177,7 +177,8 @@ a:hover, a:focus, a:active {
 }
 
 #projectAccordion {
-  width: 85%;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #bountyAccordion {
@@ -208,13 +209,19 @@ a:hover, a:focus, a:active {
   list-style-type: none;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .bounties a {
     font-size: 1.0em;
   }
 
-  .bounty-list {
+  .project-list, .bounty-list {
     padding-inline-start: 1.2em;
+  }
+}
+
+@media (max-width: 368px) {
+  .project-list, .bounty-list {
+    padding-left: 0;
   }
 }
 
@@ -268,10 +275,14 @@ a:hover, a:focus, a:active {
   border-radius: 0.25rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .prep-card a {
     text-align: left;
     font-size: 0.7em;
+  }
+
+  .card-body-container {
+    width: 90%;
   }
 }
 
