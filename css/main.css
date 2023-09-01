@@ -441,3 +441,11 @@ a:hover, a:focus, a:active {
 .ctfl-badge {
   text-align: center !important;
 }
+
+.blog-card {
+  width: 20rem;
+}
+
+.blog-date {
+  font-size: 0.7em;
+}
