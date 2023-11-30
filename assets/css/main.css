@@ -323,7 +323,7 @@ a:hover, a:focus, a:active {
 }
 
 .ld_badge_container, .ld_avi {
-  background-image: url(/img/ld-logo.png);
+  background-image: url(/assets/img/ld-logo.png);
  }
 
 .ld_avi {
@@ -331,7 +331,7 @@ a:hover, a:focus, a:active {
 }
 
 .h_badge_container, .h_avi {
-  background-image: url(/img/huntr-logo.png);
+  background-image: url(/assets/img/huntr-logo.png);
 }
 
 .h_avi {
