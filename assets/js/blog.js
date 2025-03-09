@@ -40,7 +40,7 @@ xhr.onload = () => {
       postCommentsCount = resp.comments_count;
 
       postNode = document.createElement("div");
-      postNode.className = "blog-card col";
+      postNode.className = "blog-card col-lg-4";
 
       postNodeImage = document.createElement("img");
       postNodeImage.className = "card-img-top";
