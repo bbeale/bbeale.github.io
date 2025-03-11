@@ -449,3 +449,8 @@ a:hover, a:focus, a:active {
 .blog-date {
   font-size: 0.7em;
 }
+
+.blog-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
